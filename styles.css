@@ -4,9 +4,9 @@
   --blue: #086b9f;
   --aqua: #19c3d3;
   --aqua-soft: #ddf8fa;
-  --coral: #ff5b70;
-  --coral-deep: #dc3e58;
-  --coral-soft: #fff0f3;
+  --coral: #a746e8;
+  --coral-deep: #7428b9;
+  --coral-soft: #f6edff;
   --yellow: #f5c84b;
   --yellow-soft: #fff8dc;
   --green: #18b85b;
@@ -85,7 +85,7 @@ a { color: inherit; }
   border-radius: 999px;
   color: var(--white);
   background: var(--coral);
-  box-shadow: 0 9px 22px rgba(255, 91, 112, .28);
+  box-shadow: 0 9px 22px rgba(116, 40, 185, .28);
   font-size: 14px;
   font-weight: 800;
   text-decoration: none;
@@ -144,7 +144,7 @@ a { color: inherit; }
   margin: 20px 0 0;
   padding: 7px 13px;
   border-radius: 8px;
-  color: #8b2436;
+  color: #5f2392;
   background: var(--coral-soft);
   font-size: 13px;
   font-weight: 800;
@@ -309,12 +309,16 @@ a { color: inherit; }
 .difference { display: grid; max-width: 1260px; margin: 0 auto; align-items: stretch; gap: 22px; grid-template-columns: 1.12fr .88fr; }
 .difference-card { padding: clamp(34px, 5vw, 64px); border-radius: 24px; background: var(--sky); }
 .difference-card > p:not(.eyebrow):not(.notice) { margin: 24px 0 0; color: #3b5b6c; font-size: 18px; }
+.result-list { display: grid; gap: 10px; margin: 22px 0 0; padding: 0; color: #3b5b6c; list-style: none; }
+.result-list li { position: relative; padding-left: 29px; }
+.result-list li::before { position: absolute; left: 0; color: var(--coral-deep); font-weight: 900; content: "✓"; }
 .notice { margin: 28px 0 0; padding: 18px 20px; border-left: 4px solid var(--aqua); color: var(--navy); background: var(--white); font-size: 15px; font-weight: 680; }
-.private-card { display: flex; min-height: 430px; justify-content: flex-end; flex-direction: column; padding: clamp(34px, 5vw, 58px); border-radius: 24px; color: var(--white); background: linear-gradient(145deg, var(--coral), #d63857); box-shadow: 0 22px 55px rgba(220, 62, 88, .22); }
+.private-card { display: flex; min-height: 430px; justify-content: flex-end; flex-direction: column; padding: clamp(34px, 5vw, 58px); border-radius: 24px; color: var(--white); background: linear-gradient(145deg, #7a35d0, #b73bd2); box-shadow: 0 22px 55px rgba(116, 40, 185, .25); }
 .private-badge { align-self: flex-start; padding: 7px 12px; border: 1px solid rgba(255, 255, 255, .38); border-radius: 999px; background: rgba(255, 255, 255, .14); font-size: 12px; font-weight: 850; letter-spacing: .08em; text-transform: uppercase; }
 .private-card h2 { margin-top: 22px; color: var(--white); font-size: clamp(34px, 3.7vw, 49px); }
-.private-card p { margin: 18px 0 25px; color: #fff1f4; }
-.button-white { align-self: flex-start; color: var(--navy); background: var(--white); box-shadow: 0 12px 24px rgba(109, 18, 37, .16); }
+.private-card p { margin: 18px 0 25px; color: #f8efff; }
+.private-card .insurance-note { width: fit-content; margin: -8px 0 25px; padding: 9px 12px; border-radius: 10px; color: var(--white); background: rgba(54, 13, 94, .28); }
+.button-white { align-self: flex-start; color: var(--navy); background: var(--white); box-shadow: 0 12px 24px rgba(63, 17, 105, .18); }
 
 .faq-section { padding-top: 40px; }
 .faq-list { max-width: 920px; margin: 0 auto; border-top: 1px solid var(--line); }
